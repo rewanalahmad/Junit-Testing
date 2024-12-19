@@ -14,5 +14,16 @@ public int getQuotient(int division , int divisor){
     quatint=division/divisor;
     return quatint;}
 
+public int getRemainder(int division , int divieor){
+        int remainder=0;
+        if (divieor==0){
+            throw new ArithmeticException("divisor cant be zero for division");
+        }
+        remainder=division%divieor;
+        return remainder;
+}
+
+
+
 
 }
